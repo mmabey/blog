@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://blog.mikemabey.com/</id>
   <title>Mike Mabey's Blog</title>
-  <updated>2023-02-08T17:04:57.072257+00:00</updated>
+  <updated>2023-02-08T21:38:54.690050+00:00</updated>
   <link href="https://blog.mikemabey.com/"/>
   <link href="https://blog.mikemabey.com/posts/atom.xml" rel="self"/>
   <generator uri="https://ablog.readthedocs.org/" version="0.10.33">ABlog</generator>
   <entry>
     <id>https://blog.mikemabey.com/2012/05/first_post/</id>
     <title>First Post</title>
-    <updated>2012-05-15T00:00:00-06:00</updated>
+    <updated>2012-05-15T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Welcome to my blog! The purpose of my entries will be to record my thoughts, discoveries, and progress as I take on
 new projects, research new topics, and generally seek to improve myself professionally and personally. I hope you find
@@ -20,12 +20,12 @@ some of my entries of interest or of help in your own life.&lt;/p&gt;
     <summary>Welcome to my blog! The purpose of my entries will be to record my thoughts, discoveries, and progress as I take on
 new projects, research new topics, and generally seek to improve myself professionally and personally. I hope you find
 some of my entries of interest or of help in your own life.</summary>
-    <published>2012-05-15T00:00:00-06:00</published>
+    <published>2012-05-15T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/05/risk_intelligence/</id>
     <title>Risk Intelligence: Get better at seeing the future without the two Strawberry Nirvanas</title>
-    <updated>2012-05-16T00:00:00-06:00</updated>
+    <updated>2012-05-16T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Here’s a well-known fact: It’s against human nature to be very good at guessing what’s going to happen, whether in the
 realm of world events, stock prices, personal relationships, or the reliability of your work (read: how good your code
@@ -38,12 +38,12 @@ article on risk intelligence pointed out:&lt;/p&gt;
 realm of world events, stock prices, personal relationships, or the reliability of your work (read: how good your code
 is). As a recent Wall Street Journal
 article on risk intelligence pointed out:</summary>
-    <published>2012-05-16T00:00:00-06:00</published>
+    <published>2012-05-16T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/05/troubles_with_openvpn/</id>
     <title>Troubles with OpenVPN in Ubuntu 12.04</title>
-    <updated>2012-05-17T00:00:00-06:00</updated>
+    <updated>2012-05-17T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Check out my &lt;a class="reference internal" href="../2012/06/openvpn-update-fixed/"&gt;&lt;span class="doc std std-doc"&gt;solution to the problem&lt;/span&gt;&lt;/a&gt; described below.&lt;/p&gt;
 &lt;/div&gt;
@@ -54,12 +54,12 @@ article on risk intelligence pointed out:</summary>
     <category term="OpenVPN" label="OpenVPN"/>
     <category term="Ubuntu" label="Ubuntu"/>
     <category term="networking" label="networking"/>
-    <published>2012-05-17T00:00:00-06:00</published>
+    <published>2012-05-17T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/06/openvpn-update-fixed/</id>
     <title>OpenVPN Update: Fixed!</title>
-    <updated>2012-06-06T00:00:00-06:00</updated>
+    <updated>2012-06-06T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;I finally had time to really do some more troubleshooting on the &lt;a class="reference internal" href="../2012/05/troubles_with_openvpn/"&gt;&lt;span class="doc std std-doc"&gt;OpenVPN
 problem&lt;/span&gt;&lt;/a&gt; I recently posted about. After trying some of the same old things to
@@ -76,12 +76,12 @@ time to purge the installation and start fresh:</summary>
     <category term="OpenVPN" label="OpenVPN"/>
     <category term="Ubuntu" label="Ubuntu"/>
     <category term="networking" label="networking"/>
-    <published>2012-06-06T00:00:00-06:00</published>
+    <published>2012-06-06T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/06/pydroid_at_last/</id>
     <title>Pydroid at last!</title>
-    <updated>2012-06-06T00:00:00-06:00</updated>
+    <updated>2012-06-06T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Well, hello there, my little friend! So good to see you where I had given up hope you would ever be:&lt;/p&gt;
 &lt;/div&gt;
@@ -91,12 +91,12 @@ time to purge the installation and start fresh:</summary>
     <category term="Android" label="Android"/>
     <category term="Linux" label="Linux"/>
     <category term="Python" label="Python"/>
-    <published>2012-06-06T00:00:00-06:00</published>
+    <published>2012-06-06T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/06/debian_on_android/</id>
     <title>Debian on Android and my quest for a full-fledged terminal Python IDE</title>
-    <updated>2012-06-23T00:00:00-06:00</updated>
+    <updated>2012-06-23T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;So when I recently discovered that my Asus Transformer Prime &lt;a class="reference internal" href="../2012/06/pydroid_at_last/"&gt;&lt;span class="doc std std-doc"&gt;has Python on it&lt;/span&gt;&lt;/a&gt;, but
 that it only has version 2.6.2 and is missing some needed libraries, I could tell that setting up a sweet Python
@@ -113,12 +113,12 @@ I successfully overcame multiple obstacles to get things working.</summary>
     <category term="Linux" label="Linux"/>
     <category term="Python" label="Python"/>
     <category term="vim" label="vim"/>
-    <published>2012-06-23T00:00:00-06:00</published>
+    <published>2012-06-23T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/08/the_internet_is_so_awesome/</id>
     <title>The Internet is so awesome (in case you didn’t already know)</title>
-    <updated>2012-08-22T00:00:00-06:00</updated>
+    <updated>2012-08-22T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;As I usually do, I was reading up on some tech blogs during my lunch today, and I came across two articles from
 &lt;a class="reference external" href="http://www.engadget.com/"&gt;Engadget&lt;/a&gt; that made me stop and ponder how cool it is that you can do so much without going
@@ -129,12 +129,12 @@ anywhere.&lt;/p&gt;
     <summary>As I usually do, I was reading up on some tech blogs during my lunch today, and I came across two articles from
 Engadget that made me stop and ponder how cool it is that you can do so much without going
 anywhere.</summary>
-    <published>2012-08-22T00:00:00-06:00</published>
+    <published>2012-08-22T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2012/11/downgraded_to_python_2.7.1/</id>
     <title>Downgraded to Python 2.7.1? How did that happen?</title>
-    <updated>2012-11-07T00:00:00-07:00</updated>
+    <updated>2012-11-07T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;So I was doing some work on my home computer tonight which involved a little bit of Python hacking in Windows. At one
 point I wanted to make sure that I had a certain library installed such that it was accessible to the script I was
@@ -148,12 +148,12 @@ point I wanted to make sure that I had a certain library installed such that it 
 working with, so naturally I opened up an interpreter and tried importing it. It failed, which surprised me since I had
 just finished using pip to install it and no errors occurred.</summary>
     <category term="Python" label="Python"/>
-    <published>2012-11-07T00:00:00-07:00</published>
+    <published>2012-11-07T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2013/05/getting_into_developer_mode/</id>
     <title>Getting into Developer Mode on the HP Pavilion 14 Chromebook</title>
-    <updated>2013-05-08T00:00:00-06:00</updated>
+    <updated>2013-05-08T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;So I recently added the HP Chromebook to my cohort of tech gadgets, and naturally wanted to put the device into
 developer mode. While the information posted on the &lt;a class="reference external" href="http://www.chromium.org/chromium-os"&gt;Chromium Wiki&lt;/a&gt; about the &lt;a class="reference external" href="http://www.chromium.org/chromium-os/developer-information-for-chrome-os-devices/hp-pavilion-14-chromebook"&gt;HP
@@ -173,12 +173,12 @@ here.</summary>
     <category term="ChromeOS" label="Chrome OS"/>
     <category term="Chromebook" label="Chromebook"/>
     <category term="ChromiumOS" label="Chromium OS"/>
-    <published>2013-05-08T00:00:00-06:00</published>
+    <published>2013-05-08T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2013/10/last_straw_for_excel/</id>
     <title>The Last Straw for Excel?</title>
-    <updated>2013-10-19T00:00:00-06:00</updated>
+    <updated>2013-10-19T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Microsoft Office and I haven’t been getting along well lately, which is too bad because I have really liked all the new
 features of Office 2013. But after upgrading Windows to 8.1 this week, Excel decided to stop working. As in, it
@@ -191,12 +191,12 @@ features of Office 2013. But after upgrading Windows to 8.1 this week, Excel dec
 completely crashes whenever I try to go beyond the view of cells available when it opens. Not cool.</summary>
     <category term="Excel" label="Excel"/>
     <category term="GoogleSpreadsheets" label="Google Spreadsheets"/>
-    <published>2013-10-19T00:00:00-06:00</published>
+    <published>2013-10-19T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2015/01/fixing_repo_init_chromium_os/</id>
     <title>Fixing repo init to check out Chromium OS code</title>
-    <updated>2015-01-30T00:00:00-07:00</updated>
+    <updated>2015-01-30T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Building Chromium OS is a little tricky. Although the
 &lt;a class="reference external" href="http://www.chromium.org/chromium-os/developer-guide"&gt;instructions&lt;/a&gt; from the project page are pretty detailed, one bump
@@ -210,12 +210,12 @@ I ran into was this error when I put in the repo init ... command:</summary>
     <category term="ChromeOS" label="Chrome OS"/>
     <category term="ChromiumOS" label="Chromium OS"/>
     <category term="Linux" label="Linux"/>
-    <published>2015-01-30T00:00:00-07:00</published>
+    <published>2015-01-30T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2016/01/n_dimensional_latex/</id>
     <title>Getting “n-dimensional” to look right in LaTeX</title>
-    <updated>2016-01-18T00:00:00-07:00</updated>
+    <updated>2016-01-18T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;LaTeX has some interesting rules for &lt;a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Dashes_and_hyphens"&gt;dashes&lt;/a&gt;
 and &lt;a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Hyphenation"&gt;hyphenation&lt;/a&gt; that are hard to get right in certain
@@ -229,12 +229,12 @@ and hyphenation that are hard to get right in certain
 scenarios. For example, if you use the term “n-dimensional” and it happens to fall near the end of a line, you’ll end up
 with something like this:</summary>
     <category term="LaTeX" label="LaTeX"/>
-    <published>2016-01-18T00:00:00-07:00</published>
+    <published>2016-01-18T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2016/02/check_out_old_chromium/</id>
     <title>How to check out an old version of Chromium OS</title>
-    <updated>2016-02-26T00:00:00-07:00</updated>
+    <updated>2016-02-26T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;You gotta love the combination of open source projects and git. Getting up and running with a project like Chromium OS
 is pretty straightforward with &lt;a class="reference external" href="http://www.chromium.org/chromium-os/developer-guide"&gt;the guide available on the Chromium
@@ -253,12 +253,12 @@ figure this out for a project I’m working on, so I thought I’d pass it along
     <category term="Chromebook" label="Chromebook"/>
     <category term="ChromiumOS" label="Chromium OS"/>
     <category term="git" label="git"/>
-    <published>2016-02-26T00:00:00-07:00</published>
+    <published>2016-02-26T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2016/03/using_git_stash_staged_changes/</id>
     <title>Using git-stash without losing staged changes</title>
-    <updated>2016-03-07T00:00:00-07:00</updated>
+    <updated>2016-03-07T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;When I learned about &lt;a class="reference external" href="https://git-scm.com/docs/git-stash"&gt;&lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;git-stash&lt;/span&gt;&lt;/code&gt;&lt;/a&gt;, my productivity with git from the command line
 went way up. But it wasn’t until recently that I figured out how to properly handle the situation where I had already
@@ -270,12 +270,12 @@ staged changes but needed to stash everything to do something without .&lt;/p&gt
 went way up. But it wasn’t until recently that I figured out how to properly handle the situation where I had already
 staged changes but needed to stash everything to do something without .</summary>
     <category term="git" label="git"/>
-    <published>2016-03-07T00:00:00-07:00</published>
+    <published>2016-03-07T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2017/06/goodbye_blogger/</id>
     <title>Goodbye Blogger!</title>
-    <updated>2017-07-18T00:00:00-06:00</updated>
+    <updated>2017-07-18T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;Blogger has been good to me over the years. I set up my first blog on Blogger before I had any other digital real estate
 to speak of. But ever since setting up &lt;a class="reference external" href="https://mikemabey.com"&gt;mikemabey.com&lt;/a&gt;, I’ve been looking for a way to migrate
@@ -292,12 +292,12 @@ I’ll share how I did it and what obstacles I encountered along the way.</summa
     <category term="Markdown" label="Markdown"/>
     <category term="Sphinx" label="Sphinx"/>
     <category term="git" label="git"/>
-    <published>2017-06-03T00:00:00-06:00</published>
+    <published>2017-06-03T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2017/08/ecryptfs_filenames/</id>
     <title>How eCryptfs Affects Filename Lengths</title>
-    <updated>2017-08-24T00:00:00-06:00</updated>
+    <updated>2017-08-24T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;If you’ve ever needed or wanted to know how long a filename will be when encrypted with eCryptfs, hopefully this gives
 you an idea of some of the forces at work. I don’t claim to be an expert in eCryptfs, but I did base all this
@@ -311,12 +311,12 @@ information on some pretty solid evidence.</summary>
     <category term="eCryptfs" label="eCryptfs"/>
     <category term="filesystems" label="filesystems"/>
     <category term="forensics" label="forensics"/>
-    <published>2017-08-24T00:00:00-06:00</published>
+    <published>2017-08-24T00:00:00+00:00</published>
   </entry>
   <entry>
     <id>https://blog.mikemabey.com/2022/09/nmm/</id>
     <title>Nine Men’s Morris: Rules and Strategies</title>
-    <updated>2022-09-15T00:00:00-06:00</updated>
+    <updated>2022-09-15T00:00:00+00:00</updated>
     <content type="html">&lt;div class="ablog-post-excerpt docutils container"&gt;
 &lt;p&gt;For the last several months, I’ve been a bit obsessed with a game called Nine Men’s Morris. Like a lot of other people
 before me, I first learned of the game from playing it in one of the mini-games in &lt;a class="reference external" href="https://www.ubisoft.com/en-us/game/assassins-creed/IV-black-flag"&gt;Assassin’s Creed IV: Black Flag&lt;/a&gt;. In this post, I’ll share the rules of the game
@@ -327,6 +327,6 @@ and some strategies I’ve picked up along the way.&lt;/p&gt;
     <summary>For the last several months, I’ve been a bit obsessed with a game called Nine Men’s Morris. Like a lot of other people
 before me, I first learned of the game from playing it in one of the mini-games in Assassin’s Creed IV: Black Flag. In this post, I’ll share the rules of the game
 and some strategies I’ve picked up along the way.</summary>
-    <published>2022-09-15T00:00:00-06:00</published>
+    <published>2022-09-15T00:00:00+00:00</published>
   </entry>
 </feed>
