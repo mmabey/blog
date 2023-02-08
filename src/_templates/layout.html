@@ -1,0 +1,168 @@
+{% extends "!layout.html" %}
+{#% set old_pathto = pathto %}
+{% macro pathto(file_path, depth_num=1) %}/{{ old_pathto(file_path, depth_num) }}{% endmacro %#}
+{% block extrahead %}
+
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
+  {% if pagename in ablog %}
+  <!-- Structured article data -->
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "BlogPosting",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ use_opensearch }}{{ pagename }}.html"
+      },
+      "headline": "{{ title }}",
+      {%  if meta and meta['description'] -%}
+      "description": "{{ meta['description'] }}",
+      {%- endif %}
+      "author": {
+        "@type": "Person",
+        "name": "Mike Mabey"
+      },
+      "datePublished": "{{ meta['datePublished'] }}",
+      "dateModified": "{{ meta['dateModified'] }}",
+      "publisher": {
+        "@type": "Organization",
+        "name": "mikemabey.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://mikemabey.com/logo.png",
+          "width": 395,
+          "height": 60
+        }
+      }
+    }
+  </script>
+
+  <!-- Structured breadcrumb data for the blog -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "{{ use_opensearch }}",
+        "name": "Blog"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "{{ use_opensearch }}{{ pagename.split('/')[1] }}",
+        "name": "{{ pagename.split('/')[1] }}"
+      }
+    },{
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "{{ use_opensearch }}{{ pagename }}.html",
+        "name": "{{ title }}"
+      }
+    }]
+  }
+  </script>
+  {%- else %}
+  <!-- Structured breadcrumb data -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "{{ use_opensearch }}{{ pagename }}.html",
+        "name": "{{ title }}"
+      }
+    }]
+  }
+  </script>
+  {%- endif %}
+
+  <!-- Structured social profile links -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Mike Mabey",
+    "url": "{{ use_opensearch }}",
+    "sameAs": [
+      "https://twitter.com/mkmabey",
+      "https://www.linkedin.com/pub/michael-mabey/18/a24/a6b/en"
+    ]
+  }
+  </script>
+
+  <!-- Search helper for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "url": "{{ use_opensearch }}",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{{ use_opensearch }}search.html?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+{% endblock %}
+
+
+{# Copied/pasted this from basic/layout.html #}
+{%- macro sidebar() %}
+<div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+  <div class="sphinxsidebarwrapper">
+    {%- block sidebarlogo %}
+    {%- if logo_url %}
+    <p class="logo"><a href="{{ pathto(root_doc)|e }}">
+      <img class="logo" src="{{ logo_url|e }}" alt="Logo"/>
+    </a></p>
+    {%- endif %}
+    {%- endblock %}
+    {%- if sidebars != None %}
+    {#- new style sidebar: explicitly include/exclude templates #}
+    {%- for sidebartemplate in sidebars %}
+    {%- include sidebartemplate %}
+    {%- endfor %}
+    {%- else %}
+    {#- old style sidebars: using blocks -- should be deprecated #}
+    {%- block sidebartoc %}
+    {%- include "localtoc.html" %}
+    {%- endblock %}
+    {%- block sidebarrel %}
+    {%- include "relations.html" %}
+    {%- endblock %}
+    {%- block sidebarsourcelink %}
+    {%- include "sourcelink.html" %}
+    {%- endblock %}
+    {%- if customsidebar %}
+    {%- include customsidebar %}
+    {%- endif %}
+    {%- block sidebarsearch %}
+    {%- include "searchbox.html" %}
+    {%- endblock %}
+    {%- endif %}
+  </div>
+  {%- block sidebarextra %}{%- endblock %}
+</div>
+{%- endmacro %}
+
+{% block menu %}{{ super() }}
+{% if ablog %} {{ sidebar() }} {% endif %}
+        </div>
+      </div>
+      <div class="served_by">Served with<br />
+        <a href="https://pages.github.com/"><img src="/_static/gh_pages.svg"/></a>
+        <a href="https://www.cloudflare.com/"><img src="/_static/cf.svg"/></a>
+        <div style="display: none;">
+{% endblock %}
+
+{% block comments %}{% endblock %}

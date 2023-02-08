@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "my_blog"
+version = "0.1.0"
+description = "https://blog.mikemabey.com"
+authors = ["Mike Mabey <mmabey@ieee.org>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+sphinx-rtd-theme = "*"
+myst-parser = "*"
+ablog = "*"
+ufmt = "*"
+Pillow = "*"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
