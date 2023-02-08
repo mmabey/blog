@@ -1,0 +1,63 @@
+name: Build latest and publish
+
+on:
+  push:
+    branches: [ "src" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out src branch
+        uses: actions/checkout@v3
+        with:
+          ref: "src"
+
+      - name: Install Python and Poetry
+        uses: ITProKyle/action-setup-python@v0.1.0
+        with:
+          python-version: "3.10"
+
+      - name: Set up poetry virtualenv and build pages
+        env:
+          SPHINXOPTS: "-W"  # Turns all warnings into errors
+        run: |
+            poetry install
+            cd src
+            poetry run ablog build && cd -
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: site_files
+          path: build
+
+
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out master branch
+        uses: actions/checkout@v3
+        with:
+          ref: "public"
+
+      - name: Remove old files
+        run: git rm -rf docs/*
+
+      - uses: actions/download-artifact@v3
+        with:
+          name: site_files
+          path: docs/
+
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
+      - name: Commit new files
+        run: |
+          git add .
+          git commit -m "Auto deploy `date -Idate`"
+          git push

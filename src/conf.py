@@ -27,7 +27,7 @@ blog_title = "Mike Mabey's Blog"
 base_url = "https://blog.mikemabey.com/"
 blog_baseurl = base_url
 html_use_opensearch = base_url
-ablog_website = "../docs/"  # Dir where built files go
+ablog_website = "../build/"  # Dir where built files go
 
 # Choose to archive only post titles. Archiving only titles can speed
 # up project building.
