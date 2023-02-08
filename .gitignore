@@ -1,0 +1,9 @@
+*.bak
+*.pyc
+*.retry
+*.swp
+.DS_Store
+.buildinfo
+.doctrees
+.idea
+Session.vim
