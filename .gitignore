@@ -7,4 +7,5 @@
 .idea
 Session.vim
 _website
+build
 docs
