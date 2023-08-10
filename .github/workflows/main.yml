@@ -15,17 +15,16 @@ jobs:
           ref: "src"
 
       - name: Install Python and Poetry
-        uses: ITProKyle/action-setup-python@v0.1.0
+        uses: mmabey/action-setup-python@v0.3.1
         with:
           python-version: "3.10"
 
-      - name: Set up poetry virtualenv and build pages
+      - name: Build pages
         env:
           SPHINXOPTS: "-W"  # Turns all warnings into errors
         run: |
-            poetry install
             cd src
-            poetry run ablog build && cd -
+            poetry run ablog build
 
       - uses: actions/upload-artifact@v3
         with:
