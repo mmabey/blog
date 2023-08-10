@@ -59,5 +59,7 @@ jobs:
         run: |
           git add .
           git restore --staged --worktree docs/CNAME
+          git status
+          git add _static _images
           git commit -m "Auto deploy `date -Idate`"
           git push
