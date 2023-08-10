@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Troubles with OpenVPN in Ubuntu 12.04 &mdash; Mike Mabey</title>
@@ -13,10 +13,9 @@
     <script src="../../../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/underscore.js"></script>
         <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
         <script src="../../../_static/doctools.js"></script>
         <script src="../../../_static/sphinx_highlight.js"></script>
     <script src="../../../_static/js/theme.js"></script>
@@ -24,7 +23,8 @@
           title="Search within Mike Mabey"
           href="../../../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../../../genindex/" />
-    <link rel="search" title="Search" href="../../../search/" /> 
+    <link rel="search" title="Search" href="../../../search/" />
+
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -117,40 +117,18 @@
   }
   </script>
 
- 
+
+
 <link
   rel="alternate"
   type="application/atom+xml"
   href="../../../posts/atom.xml"
   title="Mike Mabey's Blog"
 />
- 
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
 
-<style type="text/css">
-  ul.ablog-archive {
-    list-style: none;
-    overflow: auto;
-    margin-left: 0px;
-  }
-  ul.ablog-archive li {
-    float: left;
-    margin-right: 5px;
-    font-size: 80%;
-  }
-  ul.postlist a {
-    font-style: italic;
-  }
-  ul.postlist-style-disc {
-    list-style-type: disc;
-  }
-  ul.postlist-style-none {
-    list-style-type: none;
-  }
-  ul.postlist-style-circle {
-    list-style-type: circle;
-  }
-</style>
+
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
+
 
 </head>
 
@@ -159,7 +137,11 @@
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-            <a href="../../../" class="icon icon-home"> Mike's Blog
+
+          
+          
+          <a href="../../../" class="icon icon-home">
+            Mike's Blog
           </a>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../../search/" method="get">
@@ -195,10 +177,10 @@
     ><i class="fa-fw fa fa-tags"></i> </span
   >
    
-  <a class="post-tag" href="../../../posts/tag/ubuntu/">Ubuntu</a>   
+  <a class="post-tag" href="../../../posts/tag/networking/">networking</a>   
   <a class="post-tag" href="../../../posts/tag/openvpn/">OpenVPN</a>   
-  <a class="post-tag" href="../../../posts/tag/linux/">Linux</a>   
-  <a class="post-tag" href="../../../posts/tag/networking/">networking</a>  
+  <a class="post-tag" href="../../../posts/tag/ubuntu/">Ubuntu</a>   
+  <a class="post-tag" href="../../../posts/tag/linux/">Linux</a>  
 </li>
  
 </ul>
@@ -421,9 +403,10 @@
 <hr style="margin-bottom: 7px; margin-top: 3px;"/>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-              <section id="troubles-with-openvpn-in-ubuntu-12-04">
+             
+<section id="troubles-with-openvpn-in-ubuntu-12-04">
 <h1>Troubles with OpenVPN in Ubuntu 12.04<a class="headerlink" href="#troubles-with-openvpn-in-ubuntu-12-04" title="Permalink to this heading"></a></h1>
-<p><strong>Update</strong>: Check out my <a class="reference internal" href="../../06/openvpn-update-fixed/"><span class="doc std std-doc">solution to the problem</span></a> described below.</p>
+<p><strong>Update</strong>: Check out my <a class="reference internal" href="../../06/openvpn-update-fixed/"><span class="std std-doc">solution to the problem</span></a> described below.</p>
 <p>Last year at work I set up a VPN using OpenVPN in Ubuntu Server 11.10. There were a number of issues with supporting
 the specific topology of the local network I was trying to make accessible that made it tricky to get traffic from a
 connected client properly routed in and back. To be upfront, I’m not a Linux guru. I get by with the principles I’ve
@@ -437,7 +420,7 @@ figured out that in the different configurations I had tried, at one point I had
 br0, from /etc/network/interfaces. I un-commented those lines, things started working, and I never touched it for fear
 of breaking things. Restarting the system kept things going, so it must have been some sort of persistent
 configuration.</p>
-<p>Fast forward to a couple weeks ago, when my <a class="reference internal" href="../risk_intelligence/"><span class="doc std std-doc">overconfidence</span></a> and excitement at the
+<p>Fast forward to a couple weeks ago, when my <a class="reference internal" href="../risk_intelligence/"><span class="std std-doc">overconfidence</span></a> and excitement at the
 release of Ubuntu 12.04 LTS got the better of me, overpowering my previous fear of breaking the VPN. I think I said to
 myself something like the following.  “Well, all the configuration files will carry over, so things can only get better
 by running ‘sudo do-release-upgrade’, right? After all, this is a Long-Term Support release, so it’s nice and stable.”</p>
@@ -468,8 +451,12 @@ because I need it done last week or last month…</p>
 lesson from my book, and be a little more cautious than I was with updating to the latest release.</p>
 </section>
 
-<div class="section">
-    
+<div class="section ablog__blog_comments">
+  
+  
+
+
+  
   
 </div>
 
@@ -483,7 +470,7 @@ lesson from my book, and be a little more cautious than I was with updating to t
   <div role="contentinfo">
     <p>
         &copy; Copyright 2015-2023, Mike Mabey.
-      Last updated on February 08, 2023.
+      Last updated on August 10, 2023.
     </p>
   </div>
 
