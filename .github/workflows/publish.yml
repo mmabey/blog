@@ -24,8 +24,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Check out public branch
         uses: actions/checkout@v3
+        with:
+          ref: "public"
 
       - name: Setup Pages
         uses: actions/configure-pages@v3

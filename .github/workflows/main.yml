@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check out master branch
+      - name: Check out public branch
         uses: actions/checkout@v3
         with:
           ref: "public"
