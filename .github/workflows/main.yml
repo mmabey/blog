@@ -42,24 +42,26 @@ jobs:
         with:
           ref: "public"
 
+      - name: Setup git config
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+
       - name: Remove old files
-        run: git rm -rf docs/*
+        run: |
+          ls -R
+          git rm -rf docs/*
 
       - uses: actions/download-artifact@v3
         with:
           name: site_files
           path: docs/
 
-      - name: Setup git config
-        run: |
-          git config user.name "GitHub Actions Bot"
-          git config user.email "<>"
-
       - name: Commit new files
         run: |
+          ls -R
           git add .
           git restore --staged --worktree docs/CNAME
           git status
-          git add _static _images
           git commit -m "Auto deploy `date -Idate`"
           git push
