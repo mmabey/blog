@@ -10,7 +10,7 @@ jobs:
 
     steps:
       - name: Check out src branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           ref: "src"
 
@@ -26,7 +26,7 @@ jobs:
             cd src
             poetry run ablog build
 
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v7
         with:
           name: site_files
           path: build
@@ -38,7 +38,7 @@ jobs:
 
     steps:
       - name: Check out public branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           ref: "public"
 
@@ -51,7 +51,7 @@ jobs:
         run: |
           git rm -rf docs/*
 
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v8
         with:
           name: site_files
           path: docs/
@@ -82,9 +82,10 @@ jobs:
       contents: read
       pages: write
       id-token: write
+      actions: read
 
     steps:
-      - uses: actions/download-artifact@v3
+      - uses: actions/download-artifact@v8
         with:
           name: site_files
           # _site is the default dir for uploading Pages artifacts
@@ -92,13 +93,13 @@ jobs:
           path: _site/
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v6
 
       - name: Upload pages artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v5
         with:
           path: _site/
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v5
