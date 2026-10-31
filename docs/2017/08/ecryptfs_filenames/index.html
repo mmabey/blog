@@ -1,30 +1,29 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>How eCryptfs Affects Filename Lengths &mdash; Mike Mabey</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
-    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=a814bf29" />
+
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=a5603611"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Mike Mabey"
           href="../../../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../../../genindex/" />
-    <link rel="search" title="Search" href="../../../search/" />
-
+    <link rel="search" title="Search" href="../../../search/" /> 
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -117,19 +116,16 @@
   }
   </script>
 
-
-
+ 
 <link
   rel="alternate"
   type="application/atom+xml"
   href="../../../posts/atom.xml"
   title="Mike Mabey's Blog"
 />
-
-
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
-
-
+ 
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+ 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -177,9 +173,9 @@
     ><i class="fa-fw fa fa-tags"></i> </span
   >
    
-  <a class="post-tag" href="../../../posts/tag/forensics/">forensics</a>   
   <a class="post-tag" href="../../../posts/tag/ecryptfs/">eCryptfs</a>   
-  <a class="post-tag" href="../../../posts/tag/filesystems/">filesystems</a>  
+  <a class="post-tag" href="../../../posts/tag/filesystems/">filesystems</a>   
+  <a class="post-tag" href="../../../posts/tag/forensics/">forensics</a>  
 </li>
  
 </ul>
@@ -402,20 +398,19 @@
 <hr style="margin-bottom: 7px; margin-top: 3px;"/>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-<section id="how-ecryptfs-affects-filename-lengths">
-<h1>How eCryptfs Affects Filename Lengths<a class="headerlink" href="#how-ecryptfs-affects-filename-lengths" title="Permalink to this heading"></a></h1>
+              <section id="how-ecryptfs-affects-filename-lengths">
+<h1>How eCryptfs Affects Filename Lengths<a class="headerlink" href="#how-ecryptfs-affects-filename-lengths" title="Link to this heading"></a></h1>
 <p>If you’ve ever needed or wanted to know how long a filename will be when encrypted with eCryptfs, hopefully this gives
 you an idea of some of the forces at work. I don’t claim to be an expert in eCryptfs, but I did base all this
 information on some pretty solid evidence.</p>
 <section id="tl-dr">
-<h2>TL;DR<a class="headerlink" href="#tl-dr" title="Permalink to this heading"></a></h2>
+<h2>TL;DR<a class="headerlink" href="#tl-dr" title="Link to this heading"></a></h2>
 <p>eCryptfs increases the length of a filename in a predictable pattern. Check the <a class="reference internal" href="#id1"><span class="std std-ref">table down below</span></a>. If you know
 the length of the unencrypted file <code class="docutils literal notranslate"><span class="pre">n</span></code>, find the row where <code class="docutils literal notranslate"><span class="pre">n</span></code> falls between the first two columns. The encrypted length
 will be the right column of that row.</p>
 </section>
 <section id="background">
-<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading"></a></h2>
+<h2>Background<a class="headerlink" href="#background" title="Link to this heading"></a></h2>
 <p>While doing research for my PhD, some of my work has included eCryptfs indirectly (I do research in digital forensics,
 not cryptography or filesystems). At one point I was trying to predict the size of files after encryption, and the
 biggest discrepancy between my predictions and the actual values was the directory entries. I had assumed that all
@@ -432,7 +427,7 @@ about:</p>
 <p>See how the length of the filenames is always a constant plus the multiple of some value?</p>
 </section>
 <section id="the-experiment">
-<h2>The Experiment<a class="headerlink" href="#the-experiment" title="Permalink to this heading"></a></h2>
+<h2>The Experiment<a class="headerlink" href="#the-experiment" title="Link to this heading"></a></h2>
 <p>I wrote a Python script to create a file in the “upper” filesystem (unencrypted) and monitor the corresponding entry in
 the “lower” filesystem (encrypted). My script created files with increasing filename lengths and then recorded what the
 length of the filename was for the lower file. It did this thousands of times with randomly generated filenames,
@@ -444,7 +439,7 @@ the encryption process will fail for an unencrypted file with any more than 143 
 <p>These ranges were very consistent in my experiment (which I ran several times), so I presently have no reason to believe
 there are any edge cases that wouldn’t fit into the table.</p>
 <span id="id1"></span><table class="right-align-all docutils align-default" id="id2">
-<caption><span class="caption-text">Thresholds for encrypted filenames.</span><a class="headerlink" href="#id2" title="Permalink to this table"></a></caption>
+<caption><span class="caption-text">Thresholds for encrypted filenames.</span><a class="headerlink" href="#id2" title="Link to this table"></a></caption>
 <thead>
 <tr class="row-odd"><th class="head"><p>Upper Min</p></th>
 <th class="head"><p>Upper Max</p></th>
@@ -502,7 +497,7 @@ need to factor this in when calculating sizes.</p>
 </div>
 </section>
 <section id="extra-details-ecryptfs-filename-details">
-<h2>Extra Details - eCryptfs Filename Details<a class="headerlink" href="#extra-details-ecryptfs-filename-details" title="Permalink to this heading"></a></h2>
+<h2>Extra Details - eCryptfs Filename Details<a class="headerlink" href="#extra-details-ecryptfs-filename-details" title="Link to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The following are some notes I took while trying to understand the source code for eCryptfs. It might not make any
@@ -567,12 +562,7 @@ and (2) the same key isn’t used to encrypt both the file contents and the file
 </section>
 
 <div class="section ablog__blog_comments">
-  
-  
-
-
-  
-  
+       
 </div>
 
            </div>
@@ -584,8 +574,8 @@ and (2) the same key isn’t used to encrypt both the file contents and the file
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015-2023, Mike Mabey.
-      Last updated on October 03, 2023.
+        &copy; Copyright 2015-2026, Mike Mabey.
+      Last updated on October 31, 2026.
     </p>
   </div>
 

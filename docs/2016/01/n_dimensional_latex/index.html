@@ -1,30 +1,29 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Getting “n-dimensional” to look right in LaTeX &mdash; Mike Mabey</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
-    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=a814bf29" />
+
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=a5603611"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Mike Mabey"
           href="../../../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../../../genindex/" />
-    <link rel="search" title="Search" href="../../../search/" />
-
+    <link rel="search" title="Search" href="../../../search/" /> 
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -117,19 +116,16 @@
   }
   </script>
 
-
-
+ 
 <link
   rel="alternate"
   type="application/atom+xml"
   href="../../../posts/atom.xml"
   title="Mike Mabey's Blog"
 />
-
-
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
-
-
+ 
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+ 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -403,9 +399,8 @@
 <hr style="margin-bottom: 7px; margin-top: 3px;"/>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-<section id="getting-n-dimensional-to-look-right-in-latex">
-<h1>Getting “n-dimensional” to look right in LaTeX<a class="headerlink" href="#getting-n-dimensional-to-look-right-in-latex" title="Permalink to this heading"></a></h1>
+              <section id="getting-n-dimensional-to-look-right-in-latex">
+<h1>Getting “n-dimensional” to look right in LaTeX<a class="headerlink" href="#getting-n-dimensional-to-look-right-in-latex" title="Link to this heading"></a></h1>
 <p>LaTeX has some interesting rules for <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Dashes_and_hyphens">dashes</a>
 and <a class="reference external" href="https://en.wikibooks.org/wiki/LaTeX/Text_Formatting#Hyphenation">hyphenation</a> that are hard to get right in certain
 scenarios. For example, if you use the term “n-dimensional” and it happens to fall near the end of a line, you’ll end up
@@ -428,14 +423,14 @@ dimensional</p>
 </pre></div>
 </div>
 <section id="what-s-going-on-in-the-snippet">
-<h2>What’s going on in the snippet?<a class="headerlink" href="#what-s-going-on-in-the-snippet" title="Permalink to this heading"></a></h2>
+<h2>What’s going on in the snippet?<a class="headerlink" href="#what-s-going-on-in-the-snippet" title="Link to this heading"></a></h2>
 <p>The #1 refers to whatever you added as a parameter to the command, which in the example above is “n”.</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">\nobreakdash</span></code> needs to be combined with a dash character. That means that in other situations you may just need to do this:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>\<span class="n">renewcommand</span><span class="p">{</span>\<span class="n">ndimensional</span><span class="p">}[</span><span class="mi">1</span><span class="p">]{</span><span class="c1">#1\nobreakdash-\hspace{0pt}dimensional}</span>
 </pre></div>
 </div>
 <p>While the output will be fine for many use cases, the previous snippet with the \discretionary command is a more
-general-case solution. (See <a class="reference external" href="http://latex-community.org/forum/viewtopic.php?f=44&amp;amp;t=5673">this forum post</a> for more info.)</p>
+general-case solution. (See <a class="reference external" href="http://latex-community.org/forum/viewtopic.php?f=44&amp;t=5673">this forum post</a> for more info.)</p>
 <p>The <code class="docutils literal notranslate"><span class="pre">\hspace{0pt}</span></code> tells LaTeX not to allow any space (including a newline) between the previous character and the one
 that follows, acting like glue between the dash added with the <code class="docutils literal notranslate"><span class="pre">\discretionary</span></code> command and the “d” of dimensional.
 Without it, you’ll get output like this:</p>
@@ -449,12 +444,7 @@ necessary command.</p>
 </section>
 
 <div class="section ablog__blog_comments">
-  
-  
-
-
-  
-  
+       
 </div>
 
            </div>
@@ -466,8 +456,8 @@ necessary command.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015-2023, Mike Mabey.
-      Last updated on October 03, 2023.
+        &copy; Copyright 2015-2026, Mike Mabey.
+      Last updated on October 31, 2026.
     </p>
   </div>
 

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
   <id>https://blog.mikemabey.com/</id>
   <title>Mike Mabey's Blog</title>
-  <updated>2023-10-03T14:14:15.281941+00:00</updated>
+  <updated>2026-10-31T22:40:23.939730+00:00</updated>
   <link href="https://blog.mikemabey.com/"/>
   <link href="https://blog.mikemabey.com/posts/atom.xml" rel="self"/>
-  <generator uri="https://ablog.readthedocs.io/" version="0.11.4.post1">ABlog</generator>
+  <generator uri="https://ablog.readthedocs.io/" version="0.11.13">ABlog</generator>
   <entry>
     <id>https://blog.mikemabey.com/2022/09/nmm/</id>
     <title>Nine Men’s Morris: Rules and Strategies</title>
@@ -15,7 +15,7 @@ before me, I first learned of the game from playing it in one of the mini-games 
 and some strategies I’ve picked up along the way.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2022/09/nmm/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2022/09/nmm/"/>
     <summary>For the last several months, I’ve been a bit obsessed with a game called Nine Men’s Morris. Like a lot of other people
 before me, I first learned of the game from playing it in one of the mini-games in Assassin’s Creed IV: Black Flag. In this post, I’ll share the rules of the game
 and some strategies I’ve picked up along the way.</summary>
@@ -30,7 +30,7 @@ you an idea of some of the forces at work. I don’t claim to be an expert in eC
 information on some pretty solid evidence.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2017/08/ecryptfs_filenames/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2017/08/ecryptfs_filenames/"/>
     <summary>If you’ve ever needed or wanted to know how long a filename will be when encrypted with eCryptfs, hopefully this gives
 you an idea of some of the forces at work. I don’t claim to be an expert in eCryptfs, but I did base all this
 information on some pretty solid evidence.</summary>
@@ -49,7 +49,7 @@ off of Blogger and have everything all together on the same site. I recently com
 I’ll share how I did it and what obstacles I encountered along the way.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2017/06/goodbye_blogger/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2017/06/goodbye_blogger/"/>
     <summary>Blogger has been good to me over the years. I set up my first blog on Blogger before I had any other digital real estate
 to speak of. But ever since setting up mikemabey.com, I’ve been looking for a way to migrate
 off of Blogger and have everything all together on the same site. I recently completed that objective, and in this post
@@ -69,7 +69,7 @@ went way up. But it wasn’t until recently that I figured out how to properly h
 staged changes but needed to stash everything to do something without .&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2016/03/using_git_stash_staged_changes/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2016/03/using_git_stash_staged_changes/"/>
     <summary>When I learned about git-stash, my productivity with git from the command line
 went way up. But it wasn’t until recently that I figured out how to properly handle the situation where I had already
 staged changes but needed to stash everything to do something without .</summary>
@@ -87,7 +87,7 @@ Wiki&lt;/a&gt;. But what if, for some reason, you’re interested in a version
 figure this out for a project I’m working on, so I thought I’d pass it along.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2016/02/check_out_old_chromium/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2016/02/check_out_old_chromium/"/>
     <summary>You gotta love the combination of open source projects and git. Getting up and running with a project like Chromium OS
 is pretty straightforward with the guide available on the Chromium
 Wiki. But what if, for some reason, you’re interested in a version
@@ -109,7 +109,7 @@ scenarios. For example, if you use the term “n-dimensional” and it happens t
 with something like this:&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2016/01/n_dimensional_latex/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2016/01/n_dimensional_latex/"/>
     <summary>LaTeX has some interesting rules for dashes
 and hyphenation that are hard to get right in certain
 scenarios. For example, if you use the term “n-dimensional” and it happens to fall near the end of a line, you’ll end up
@@ -126,7 +126,7 @@ with something like this:</summary>
 I ran into was this error when I put in the &lt;code class="docutils literal notranslate"&gt;&lt;span class="pre"&gt;repo&lt;/span&gt; &lt;span class="pre"&gt;init&lt;/span&gt; &lt;span class="pre"&gt;...&lt;/span&gt;&lt;/code&gt; command:&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2015/01/fixing_repo_init_chromium_os/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2015/01/fixing_repo_init_chromium_os/"/>
     <summary>Building Chromium OS is a little tricky. Although the
 instructions from the project page are pretty detailed, one bump
 I ran into was this error when I put in the repo init ... command:</summary>
@@ -144,7 +144,7 @@ features of Office 2013. But after upgrading Windows to 8.1 this week, Excel dec
 completely crashes whenever I try to go beyond the view of cells available when it opens. Not cool.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2013/10/last_straw_for_excel/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2013/10/last_straw_for_excel/"/>
     <summary>Microsoft Office and I haven’t been getting along well lately, which is too bad because I have really liked all the new
 features of Office 2013. But after upgrading Windows to 8.1 this week, Excel decided to stop working. As in, it
 completely crashes whenever I try to go beyond the view of cells available when it opens. Not cool.</summary>
@@ -164,7 +164,7 @@ mode from start to finish. Another great resource is the HP repair manual, avail
 &lt;a class="reference external" href="http://www.manualbag.com/hp/hp-laptops/hp-pavilion-14-c010us-chromebook/"&gt;here&lt;/a&gt;.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2013/05/getting_into_developer_mode/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2013/05/getting_into_developer_mode/"/>
     <summary>So I recently added the HP Chromebook to my cohort of tech gadgets, and naturally wanted to put the device into
 developer mode. While the information posted on the Chromium Wiki about the HP
 Chromebook
@@ -186,7 +186,7 @@ working with, so naturally I opened up an interpreter and tried importing it. It
 just finished using pip to install it and no errors occurred.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/11/downgraded_to_python_2.7.1/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/11/downgraded_to_python_2.7.1/"/>
     <summary>So I was doing some work on my home computer tonight which involved a little bit of Python hacking in Windows. At one
 point I wanted to make sure that I had a certain library installed such that it was accessible to the script I was
 working with, so naturally I opened up an interpreter and tried importing it. It failed, which surprised me since I had
@@ -203,7 +203,7 @@ just finished using pip to install it and no errors occurred.</summary>
 anywhere.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/08/the_internet_is_so_awesome/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/08/the_internet_is_so_awesome/"/>
     <summary>As I usually do, I was reading up on some tech blogs during my lunch today, and I came across two articles from
 Engadget that made me stop and ponder how cool it is that you can do so much without going
 anywhere.</summary>
@@ -219,7 +219,7 @@ programming environment was going to be possible, but a little longer road than 
 I successfully overcame multiple obstacles to get things working.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/06/debian_on_android/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/06/debian_on_android/"/>
     <summary>So when I recently discovered that my Asus Transformer Prime has Python on it, but
 that it only has version 2.6.2 and is missing some needed libraries, I could tell that setting up a sweet Python
 programming environment was going to be possible, but a little longer road than I thought it was going to be. Here’s how
@@ -237,7 +237,7 @@ I successfully overcame multiple obstacles to get things working.</summary>
     <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;Well, hello there, my little friend! So good to see you where I had given up hope you would ever be:&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/06/pydroid_at_last/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/06/pydroid_at_last/"/>
     <summary>Well, hello there, my little friend! So good to see you where I had given up hope you would ever be:</summary>
     <category term="Android" label="Android"/>
     <category term="Linux" label="Linux"/>
@@ -254,7 +254,7 @@ get the server to be able to access the Internet and have the VPN service runnin
 time to purge the installation and start fresh:&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/06/openvpn-update-fixed/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/06/openvpn-update-fixed/"/>
     <summary>I finally had time to really do some more troubleshooting on the OpenVPN
 problem I recently posted about. After trying some of the same old things to
 get the server to be able to access the Internet and have the VPN service running at the same time, I decided it was
@@ -272,7 +272,7 @@ time to purge the installation and start fresh:</summary>
     <content type="html">&lt;p class="ablog-post-excerpt"&gt;&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;: Check out my &lt;a class="reference internal" href="../2012/06/openvpn-update-fixed/"&gt;&lt;span class="std std-doc"&gt;solution to the problem&lt;/span&gt;&lt;/a&gt; described below.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/05/troubles_with_openvpn/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/05/troubles_with_openvpn/"/>
     <summary>Update: Check out my solution to the problem described below.</summary>
     <category term="Linux" label="Linux"/>
     <category term="OpenVPN" label="OpenVPN"/>
@@ -290,7 +290,7 @@ is). As a recent &lt;a class="reference external" href="http://online.wsj.com/a
 article on risk intelligence pointed out:&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/05/risk_intelligence/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/05/risk_intelligence/"/>
     <summary>Here’s a well-known fact: It’s against human nature to be very good at guessing what’s going to happen, whether in the
 realm of world events, stock prices, personal relationships, or the reliability of your work (read: how good your code
 is). As a recent Wall Street Journal
@@ -306,7 +306,7 @@ new projects, research new topics, and generally seek to improve myself professi
 some of my entries of interest or of help in your own life.&lt;/p&gt;
 &lt;/p&gt;
 </content>
-    <link href="https://blog.mikemabey.com/2012/05/first_post/" rel="alternate"/>
+    <link href="https://blog.mikemabey.com/2012/05/first_post/"/>
     <summary>Welcome to my blog! The purpose of my entries will be to record my thoughts, discoveries, and progress as I take on
 new projects, research new topics, and generally seek to improve myself professionally and personally. I hope you find
 some of my entries of interest or of help in your own life.</summary>

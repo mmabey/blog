@@ -1,30 +1,29 @@
+
+
 <!DOCTYPE html>
-<html class="writer-html5" lang="en" >
+<html class="writer-html5" lang="en" data-content_root="../../../">
 <head>
-  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Using git-stash without losing staged changes &mdash; Mike Mabey</title>
-      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
-    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
-  <!--[if lt IE 9]>
-    <script src="../../../_static/js/html5shiv.min.js"></script>
-  <![endif]-->
+      <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=03e43079" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=a814bf29" />
+
   
-        <script src="../../../_static/jquery.js"></script>
-        <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
-        <script src="../../../_static/doctools.js"></script>
-        <script src="../../../_static/sphinx_highlight.js"></script>
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+      <script src="../../../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../../../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../../../_static/documentation_options.js?v=a5603611"></script>
+      <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+      <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
     <script src="../../../_static/js/theme.js"></script>
     <link rel="search" type="application/opensearchdescription+xml"
           title="Search within Mike Mabey"
           href="../../../_static/opensearch.xml"/>
     <link rel="index" title="Index" href="../../../genindex/" />
-    <link rel="search" title="Search" href="../../../search/" />
-
+    <link rel="search" title="Search" href="../../../search/" /> 
 
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Roboto+Slab:400,700|Inconsolata:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -117,19 +116,16 @@
   }
   </script>
 
-
-
+ 
 <link
   rel="alternate"
   type="application/atom+xml"
   href="../../../posts/atom.xml"
   title="Mike Mabey's Blog"
 />
-
-
-<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet"/>
-
-
+ 
+<link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" />
+ 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -403,9 +399,8 @@
 <hr style="margin-bottom: 7px; margin-top: 3px;"/>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-             
-<section id="using-git-stash-without-losing-staged-changes">
-<h1>Using git-stash without losing staged changes<a class="headerlink" href="#using-git-stash-without-losing-staged-changes" title="Permalink to this heading"></a></h1>
+              <section id="using-git-stash-without-losing-staged-changes">
+<h1>Using git-stash without losing staged changes<a class="headerlink" href="#using-git-stash-without-losing-staged-changes" title="Link to this heading"></a></h1>
 <p>When I learned about <a class="reference external" href="https://git-scm.com/docs/git-stash"><code class="docutils literal notranslate"><span class="pre">git-stash</span></code></a>, my productivity with git from the command line
 went way up. But it wasn’t until recently that I figured out how to properly handle the situation where I had already
 staged changes but needed to stash everything to do something without .</p>
@@ -417,14 +412,14 @@ you do <code class="docutils literal notranslate"><span class="pre">git</span> <
 <code class="docutils literal notranslate"><span class="pre">stash</span></code>.</p>
 <ol class="arabic">
 <li><p>First, do a stash of only the things you haven’t yet staged:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> git stash save --keep-index &quot;Un-staged changes&quot;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> git stash save --keep-index "Un-staged changes"
 </pre></div>
 </div>
 <p>At this point, if you run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code>, you should see all your changes that have been staged still there, but none of
 the changes NOT staged for commit (except of course for any untracked files).</p>
 </li>
 <li><p>Next, stash the staged changes as you normally would:</p>
-<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> git stash save &quot;Staged&quot;
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span> git stash save "Staged"
 </pre></div>
 </div>
 </li>
@@ -451,12 +446,7 @@ everything back to the way it was at the beginning.</p></li>
 </section>
 
 <div class="section ablog__blog_comments">
-  
-  
-
-
-  
-  
+       
 </div>
 
            </div>
@@ -468,8 +458,8 @@ everything back to the way it was at the beginning.</p></li>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2015-2023, Mike Mabey.
-      Last updated on October 03, 2023.
+        &copy; Copyright 2015-2026, Mike Mabey.
+      Last updated on October 31, 2026.
     </p>
   </div>
 
